@@ -70,7 +70,7 @@ void stampa_array(int n, int *x){
 
 int main(void) {
     int i,n;
-    int *ptr;
+    int *ptr, *ctr;
     printf("Inserisci il numero di elementi: ");
     scanf("%d", &n);
 
@@ -96,7 +96,6 @@ int main(void) {
     ctr = calloc(n, sizeof(int)); // Alloca e inizializza un array di n zeri (interi)
     printf("Valori inizializzati con calloc (tutti zero):\n");
     // Nelle slide fa vedere come può essere definita una funzione allocate_array usando calloc, sia usando return che usando il puntatore a puntatore (vedi da lì per la sintassi).
-    // Fondamentalmente è la stessa cosa fatta con i parametri nella funzione nell'esempio nel file precedente.
 
     free(ptr); // Libero la memoria allocata dinamicamente
     free(ctr); // Libero la memoria allocata dinamicamente 
