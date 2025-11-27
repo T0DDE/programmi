@@ -76,6 +76,6 @@ void scambia_con_indirizzi(int *x, int *y) { // La funzione deve sapere dove si 
     printf("Dentro scambia_con_indirizzi dopo lo scambio, i parametri formali sono: *x = %d, che sta in %p, *y = %d, che sta in %p\n ", *x, x, *y, y);
     // Questi cambiamenti influenzano i parametri attuali nel main, perché qui sto lavorando con i loro indirizzi.
 }
-// quanto abbiamo visto riguarda il concetto di visibilità delle variabili e dei parametri in C.
+// Quanto abbiamo visto riguarda il concetto di visibilità delle variabili e dei parametri in C.
 // Le variabili dichiarate all'interno di una funzione sono visibili solo all'interno di quella funzione (scope locale).
 // Le variabili dichiarate all'esterno di tutte le funzioni sono visibili in tutto il file (scope globale).
