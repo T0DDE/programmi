@@ -65,43 +65,49 @@ void stampa_array(int n, int *x){
 
 // Array dinamico: malloc()
 
-#include <stdlib.h>
-#include <stdio.h>
+/////////////////////////////////////////////////////////////
+/// Il codice che segue è commmentato. Se vuoi eseguirlo, ///
+/// copia e incollalo in un nuovo file .c separato.       ///
+/// togliendo i commenti "///" dalle righe.               ///
+/////////////////////////////////////////////////////////////
 
-int main(void) {
-    int i,n;
-    int *ptr, *ctr;
-    printf("Inserisci il numero di elementi: ");
-    scanf("%d", &n);
-
-    ptr = malloc(n * sizeof(int)); // Alloco dinamicamente un array di n interi
-    // malloc, memory allocation, chiede: quanta memoria ti serve? In questo caso, n * sizeof(int) byte.
-    // Restituisce un puntatore al primo byte della memoria allocata.
-    printf("Valori non inizializzati con malloc (possono essere spazzatura):\n");
-    for(i = 0; i < n; i++) {
-        printf("Inserisci l'elemento %d: ", i + 1);
-        scanf("%d", ptr + i); // equivalente a &ptr[i]
-    }
-    // Qui stampo gli elementi dell'array
-    for(i = 0; i < n; i++) {
-        printf("Ora li ho inizializzati uno ad uno: elemento %d: %d\n", i + 1, *(ptr + i)); // equivalente a ptr[i]
-    }
-    // Rispetto al caso statico, qui ho definito un array di dimensione n, che posso scegliere a runtime, mentre prima dovevo definire un array di dimensione fissa N, e poi usare solo i primi n elementi.
-    // Sono sempre elementi contigui in memoria, quindi posso usare la stessa sintassi per accedere agli elementi, ma la dimensione dell'array è decisa a runtime, anziché a compile time. Prima avevo necessità di dichiarare la dimansione mentre ora, chiedendola all'utente, posso allocare esattamente la quantità di memoria necessaria.
-    // Lo stesso risultato si può ottenere con calloc(), che inizializza la memoria allocata a zero:
-    // ptr = calloc(n, sizeof(int)); Alloca e inizializza un array di n zeri (interi)
-    for(i = 0; i < n; i++) {
-        printf("Elemento %d: %d\n", i + 1, *(ptr + i)); // equivalente a ptr[i]
-    }
-    ctr = calloc(n, sizeof(int)); // Alloca e inizializza un array di n zeri (interi)
-    printf("Valori inizializzati con calloc (tutti zero):\n");
-    // Nelle slide fa vedere come può essere definita una funzione allocate_array usando calloc, sia usando return che usando il puntatore a puntatore (vedi da lì per la sintassi).
-
-    free(ptr); // Libero la memoria allocata dinamicamente
-    free(ctr); // Libero la memoria allocata dinamicamente 
-    return 0; 
-
-}
+/// #include <stdlib.h>
+/// #include <stdio.h>
+/// 
+/// int main(void) {
+///     int i,n;
+///     int *ptr, *ctr;
+///     printf("Inserisci il numero di elementi: ");
+///     scanf("%d", &n);
+/// 
+///     ptr = malloc(n * sizeof(int)); // Alloco dinamicamente un array di n interi
+///     // malloc, memory allocation, chiede: quanta memoria ti serve? In questo caso, n * sizeof(int) byte.
+///     // Restituisce un puntatore al primo byte della memoria allocata.
+///     printf("Valori non inizializzati con malloc (possono essere spazzatura):\n");
+///     for(i = 0; i < n; i++) {
+///         printf("Inserisci l'elemento %d: ", i + 1);
+///         scanf("%d", ptr + i); // equivalente a &ptr[i]
+///     }
+///     // Qui stampo gli elementi dell'array
+///     for(i = 0; i < n; i++) {
+///         printf("Ora li ho inizializzati uno ad uno: elemento %d: %d\n", i + 1, *(ptr + i)); // equivalente a ptr[i]
+///     }
+///     // Rispetto al caso statico, qui ho definito un array di dimensione n, che posso scegliere a runtime, mentre prima dovevo definire un array di dimensione fissa N, e poi usare solo i primi n elementi.
+///     // Sono sempre elementi contigui in memoria, quindi posso usare la stessa sintassi per accedere agli elementi, ma la dimensione dell'array è decisa a runtime, anziché a compile time. Prima avevo necessità di dichiarare la dimansione mentre ora, chiedendola all'utente, posso allocare esattamente la quantità di memoria necessaria.
+///     // Lo stesso risultato si può ottenere con calloc(), che inizializza la memoria allocata a zero:
+///     // ptr = calloc(n, sizeof(int)); Alloca e inizializza un array di n zeri (interi)
+///     for(i = 0; i < n; i++) {
+///         printf("Elemento %d: %d\n", i + 1, *(ptr + i)); // equivalente a ptr[i]
+///     }
+///     ctr = calloc(n, sizeof(int)); // Alloca e inizializza un array di n zeri (interi)
+///     printf("Valori inizializzati con calloc (tutti zero):\n");
+///     // Nelle slide fa vedere come può essere definita una funzione allocate_array usando calloc, sia usando return che usando il puntatore a puntatore (vedi da lì per la sintassi).
+/// 
+///     free(ptr); // Libero la memoria allocata dinamicamente
+///     free(ctr); // Libero la memoria allocata dinamicamente 
+///     return 0; 
+/// 
+/// }
 
 
 
