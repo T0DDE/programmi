@@ -1,0 +1,165 @@
+25/11/2025 - Introduzione al C
+
+    int main(){
+    printf("ciao");
+    return 0;
+    }
+
+Sarebbe la definizione di una funzione, main(), che in questo esempio contiene le due istruzioni print e return.
+int sta a indicare il tipo di variabile che viene restituita dalla funzione. return 0 serve quindi a far si che venga restituito l'intero "0" senza avere problemi.
+
+nota:
+C non ha il tipo stringa. Ha int, float, double, e un tipo che si chiama char, un tipo che consente di memorizzare solo un carattere.
+
+Pur essendo un linguaggio di alto livello, il C da la possibilità di stare molto vicino alla memoria, e poterla maneggiare molto più di quanto non si possa fare con python o altri.
+
+Puntatore: una variabile che consente di memorizzare indirizzi di memoria RAM di altre variabili.
+
+In python 
+
+    x=10 
+
+può essere seguito da x="ciao", questo perché 10, e "ciao", sono oggetti, e x è solo un'etichetta assegnata a questi oggetti. L'etichetta x non ha un tipo, la uso solo per puntare, fare riferimento, ad un oggetto che ha invece un tipo.
+Il concetto di variabile in C è completamente diverso. Quando dichiaro
+
+    int x = 10;
+
+Sto chiedendo che mi venga dato uno spazio, che chiamo x, per memorizzare un intero. All'interno dello stesso spazio puntato da x, non posso chiedere di far stare qualcos'altro che occuperà uno spazio ben diverso.
+Per questo bisogna capire come allocare e deallocare la memoria in C.
+
+    int x;
+
+Qui dichiaro che x è una variabile di tipo intero. In python non ci sono variabili, ma oggetti individuati da etichette. Per questo non ho bisogno di dichiarare il tipo della variabile, perché non è una varibaile!
+Tornando a C: dichiarare la variabile x definisce a priori anche lo spazio (ad es. un intero occupa 4 byte). 
+La funzione 
+
+    sizeof(int), o sizeof(x)
+
+Mi restituisce lo spazio occupato dalla variabile. Sapere che int sia di 4 byte, o 32 bit, mi dice che il numero x ha un limite massimo di valore che può occupare.
+
+    printf("%d", x);
+
+stamperà il contenuto che c'è in quel momento in memoria, interpretandolo come un intero, qualunque cosa ci sia.
+La RAM è una memoria dove tutti i dati e le istruzioni dei programmi che devono essere usati dalla CPU venogono salvati. Ha una sua gestione dinamica in modo che i blocchi di memoria vengano rilasciati in maniera talmente veloce (ciclo macchina, Ghz), che da l'impressione che stia avvenendo tutto contemporaneamente.
+Stack il blocco di memoria assegnato.
+In C x = 10 assegno a uno spazio di 32 bit il valore intero 10: viene modificato lo stato dei 32 bit per rappresentare 10. Se in una riga successiva scrivo x=0, quegli stessi bit vengono modificati, cioè gli stessi 32 bit di memoria vengono sovrascritti.
+In python ho un oggetto, e lo associo ad un'etichetta. L'oggetto assegnato a x viene salvato su un pezzetto di RAM, e se riscrivo x con un altro valore, questo sarà un altro oggetto che occupa un'altra parte della RAM. Quella occupata dal precedente valore viene lasciata senza nome, senza etichetta, ed eventualmente sovrascritta da qualche altro oggetto.
+
+In C il simbolo "&", usato ad esempio come "&x", che mi dice qual è l'indirizzo di memoria in formato esadecimale se stampato con %p.
+
+es.
+    printf("l'indirizzo di x è %p", &x);
+
+C viene usato perché esistono i puntatori, che permettono di sfruttare la possibliità di salvare così gli indirizzi di memoria.
+La gestione degli input, con funzioni come scanf, che consentono di trasferire informazioni dal mondo esterno al mio programma, è fondamentale da un punto di vista della sicurezza (esempio pizzerie americane).
+Da un punto di vista utile, posso dire che l'indirizzo occupato dal mio int mi dice dove sono salvati i 4 byte. Però ognuno dei 4 ha un suo indirizzo: quello che mi viene detto con %p è l'indirizzo del primo byte, però sapendo ovviamente che lo spazio da occupare finisce con il quarto byte. Io posso indirizzare al minimo il singolo byte: i bit non hanno un loro indirizzo.
+
+Sullo scanf:
+
+    scanf("%d", &x);
+
+Si tratta di una funzione, cui sto passando l'indirizzo di memoria di x.
+Quello che fa è prendere in ingresso una variabile, in input, e salvarlo nell'indirizzo di memoria che gli ho indicato. Per questo è molto iportante che ci sia la &!! 
+
+nota:
+Su youtube lezioni video dove fa parallelo fra C e python: matteofraschini "Le variabili: differenze fra python e C".
+
+    x = x + 1;
+
+Ricorda che "=" impone l'uguaglianza, mentre "==" pone una condizione che può essere vera o falsa.
+Con un solo "=" viene considerato prima quello che c'è alla sua destra:
+
+    x=19;
+    x=x+1;
+
+Assegna ad x il valore 19, e dopo calcola 19+1=20, lo memorizza da qualche parte, e lo assegna ad x.
+In python succede la stessa cosa ma assegnando il risultato 20 in una nuova parte di memoria, non viene sovrascritta, mentre in C si.
+
+nota:
+Con le credenziali di unica puoi usare sia Clion che pycharm.
+
+ARRAY:
+Ci sono tipi di dati che possono essere correlati fra loro, comodi da considerare come un'unica variabile.
+Un'alternativa, la principale, sono gli array, o vettori. Nella versione base hanno una sola dimensione, la lunghezza.
+Un array monodimensionale è costituito da un tipo, es. int, un nome di variabile, ad esempio v, e una dimensione, la lunghezza, ad esempio 5:
+
+    int v[5];
+
+    nota: 
+    normalmente non si scrive il 5 così, ma si parametrizza, così se devo cambiare solo una volta il valore del parametro se ne ho bisogno. Le soluzioni sono diverse a seconda dei contesti: uso una costante, generalmente maiuscola, che vicino alle include, fuori dal main, definisco:
+    
+        #define N 5             // Occhio, qui non c'è uguale, non è un'assegnazione. Non alloca memoria, è un'etichetta. 
+                                // Non è, ad esempio, una variabile globale, come se avessi scritto qui fuori da int main "int n=5;"
+    
+        int main(){
+            ... N ...
+        }
+
+Come scelgo la dimensione del mio array? A seconda del contesto, progetto il codice diversamente. In generale, per non sprecare memoria, ma non rischiare di avere troppo poco spazio, metto un numero leggermente abbondante rispetto a quello che mi aspetto.
+L'eventuale "spreco" di memoria, con questa allocaizone statica, non è un grosso problema. 
+L'alternativa è l'allocazione dinamica, nell'heap, dove la dimensione viene creata durante il run del codice. Questo la rende più lenta.
+Sono gestioni diverse che vanno conosciute per essere applicate a contesti diversi.
+
+Un array è tale solo se composto di elementi adiacenti, consecutivi in memoria. Sono tutte variabili con lo stesso nome (ad esempio "v"): costituiranno un blocco di memoria RAM di 4*N byte.
+Il compilatore sa che sono N variabili di tipo intero, ma da un punto di vista logico gli N blocchi da 4 byte sono un unico blocco in realtà. 
+
+    nota:
+    Il nome di un array in C è, salvo il caso di sizeof, un puntatore costante al primo elemento dell'array: scrivere v è uguale a scrivere &v[0].
+    Ho una scatola di 4*N byte, con l'indirizzo di memoria solo del primo byte.
+    Un array è tale solo se composto di elementi adiacenti: c'è un blocco di memoria RAM di una certa dimensione, in cui alloco i miei numeri a partire dall'indice del primo elemento.
+    Perché il primo elemento è 0?
+    A partire dall'indice del primo elemento, per assegnare il valore a v[0], di quanto mi devo spostare? di 0. Per mettere il secondo elemento, successivo al primo, di quanto? di 1 --> v[1], e così via.
+    Questi 0, 1 e 2 sono interi, cioè blocchi di 4byte, che uso per spostarmi di blocchi di dimensione giusta per assegnare valori alle varie parti del blocco di 4*N byte.
+
+        printf("%p %p %p", v+0,v+1,v+2) // stampa l'indirizzo dell'elemento v=&v[0] e i successivi interi. Quindi v+1=&v[1], v+2=&v[2], ...
+
+A seconda del tipo che assegno al mio array, saprà di quanti byte fare i passi per riempirlo coi vari elementi.
+
+PUNTATORI
+Una variabile che può contenere al suo interno l'indirizzo di memoria di un'altra variabile. 
+Il nome di un array è un puntatore, ma non normale: non è dichiarato come un puntatore. Lo dichiaro come array, quindi il nome contiene l'indirizzo di memoria del primo elemento, ed è una costante. Questo è fondamentale, perché è il motivo per cui non può essere riassegnato, ad esempio facendo:
+
+    int v[N];
+    int w[N];
+
+    v=w // questo non posso farlo! coi puntatori normali potrei invece.
+    I puntatori normali si inizializzano come:
+
+        int *puntatore_x;
+
+    nota:
+    Cicli for in C:
+        int i;
+
+        for (i=0;i<N;i++) { // i++ == i=i+1, si può scrivere in entrambi i modi.
+            printf("Ciclo numero %d", i);
+            printf("%p", v+i);
+            printf("%p", &v[i]); // che è uguale a scrivere la riga precedente.
+
+            // In C esiste l'operatore * che messa prima di un indirizzo, o una variabile di tipo puntatore, la "dereferenzia", restituendo quindi non l'indirizzo ma il valore ivi contenuto:
+
+            printf("%d", *(v+i)) // nota: *v + i dereferenzia v e ci aggiunge i, mentre io voglio che dereferenzi il blocco (v+i)
+            printf("%d", v[i])
+        }
+
+Codice così normalmente non se ne vede: quello che si fa è usare o definire e quindi usare funzioni.
+Per esempio una funzione può servire a caricare degli elementi, mentre una per stamparli. Non dovrò così scrivere ogni volta tutto il codice. In C la funzione può restituire SOLO UN VALORE, un parametro. Non può esserci return 1, 2, 3, etc.
+Fuori da 
+
+    void stampa_array(int, int *) //void: non restituisce nulla, int è la lunghezza, int * sarà il puntaatore all'array
+
+    int main(){
+        scanf("Scegli il numero di elementi: %d", n)
+        stampa_array(n,v);
+    }
+    
+    void stampa_array(int, int *v) {
+        int i;
+        for (i=0;i<n;i++) {
+            printf("%d", &n)
+        }
+    } 
+
+In C non esiste passaggio per riferimento, ma solo per valore: passando a un'altra variabile il contenutpo, il valore del parametro attuale.
+Quando passo un array alla funzione, non sto veramente passando l'array, copiandolo, che sarebbe inefficiente. Quando scrivo nell'argomento della funzione *v, io sto passando un indirizzo di memoria: al suo interno non ho una copia dell'array, ama solo una copia dell'indirizzo dell'array. La dimensione dell'indirizzo nelle architetture moderne è 8, quindi dentro la funzione se io do v come argomento, e printo sizeof(*v), mi darà la dimensione dell'indirizzo, non dell'array! mi darà sempre 8 come risultato.
+Non importa come lo specifichi, l'array quando lo definisco è un indirizzo, quindi darà sempre 8 se usato in questo modo.
