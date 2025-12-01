@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\begin{document}
+
+\section{Lezioni di Telecomunicazioni - 25/11/2012}
+\textbf{Docente: Luigi Atzori}
+
+Si tratta di trasmissione di dati digitali su canali di comunicazione di diversa natura (cavo, fibra ottica, etere).\\
+Perché a noi di Terna interessa?\\
+Perché Terna deve trasmettere dati di controllo e monitoraggio delle reti elettriche\footnote{Cos'è una modulazione del segnale? È un'operazione che consente di adattare il segnale informativo alle caratteristiche del canale di trasmissione. Si trasmette dell'informazione su una portante (cioè un segnale di frequenza più alta) che viene modulata in ampiezza, frequenza o fase. Se per esempio TIM ha la banda a 2 GHz, e un altro operatore ha una banda a 2.1 GHz, non si possono usare le stesse frequenze. La frequenza a cui si trasmette il segnale informativo viene detta \textit{frequenza di portante} (pensa alle frequenze radio).}.\\
+
+Il collegamento tra dispositivi di una rete è un sistema di trasmissione. In una stessa rete posso avere diversi sistemi di trasmissione.\\
+I dispositivi intermedi di una rete si chiamano \textbf{intermediary devices} (router, switch, ecc).\\
+Con \textbf{network media} si intende il mezzo fisico attraverso cui viaggia il segnale (cavo, fibra ottica, etere).\\
+Gli apparati sono distribuiti con una distribuzione fisica che chiamiamo \textbf{topologia di rete}, che segue certe regole. Gli apparati sono organizzati fra loro secondo una topologia \textbf{logica}, che dipende dal protocollo di comunicazione usato.\\
+
+\textbf{LAN} (\textbf{Local Area Network}) è una rete locale, che copre un'area limitata (es. un edificio).\\
+\textbf{WAN} (\textbf{Wide Area Network}) è una rete geografica, che copre un'area estesa (es. una città, un paese).\\
+
+Fino agli anni '90 le reti erano principalmente separate (es. rete telefonica, rete dati, rete elettrica). Oggi si tende a rendere le reti \textbf{convergenti}, permettendo di ridurre i costi di gestione e manutenzione. Le tecnologie prima non erano abbastanza flessibili per permettere la convergenza delle reti.\footnote{La DSL (Digital Subscriber Line) è una tecnologia che permette di utilizzare i cavi telefonici tradizionali per la connessione Internet.}\\
+
+La rete Internet deve soddisfare certi requisiti:
+\begin{itemize}
+    \item \textbf{Fault Tolerance:} Deve continuare a funzionare anche in presenza di guasti;
+    \item \textbf{Scalability:} Deve poter crescere senza problemi;
+    \item \textbf{Security:} Confidenzialità, integrità, autenticazione, non ripudio;
+    \item \textbf{Quality of Service (QoS):} Garantire certe prestazioni (es. banda minima, ritardo massimo, jitter massimo, perdita massima di pacchetti).
+\end{itemize}
+
+Se nella rete elettrica c'è un sovraccarico e bisogna intervenire, la rete di telecomunicazioni deve essere in grado di garantire la trasmissione dei dati in maniera prioritaria.
+
+\paragraph{Protocolli}
+Sono una serie di regole che permettono a due dispositivi di comunicare. Un protocollo definisce:
+\begin{itemize}
+    \item codifica dei dati;
+    \item dimensione massima del pacchetto;
+    \item temporizzazione;
+\end{itemize}
+
+All'interno di una rete, il delivery può avvenire in più metodi:
+\begin{itemize}
+    \item \textbf{Unicast:} Comunicazione uno a uno (es. chiamata telefonica);
+    \item \textbf{Broadcast:} Comunicazione uno a tutti (es. TV, radio);
+    \item \textbf{Multicast:} Comunicazione uno a molti (es. videoconferenza).
+\end{itemize}
+
+\paragraph{TCP/IP protocol suite}
+Una suite di protocolli è un insieme di protocolli che lavorano insieme per fornire servizi di comunicazione. TCP/IP è la suite di protocolli più utilizzata su Internet. La suite TCP/IP è composta da quattro livelli:
+\begin{itemize}
+    \item \textbf{Application layer:} Fornisce servizi di rete alle applicazioni (es. \texttt{HTTP}, \texttt{FTP}, \texttt{SMTP});
+    \item \textbf{Transport layer:} Gestisce la comunicazione tra host (es. \texttt{TCP}, \texttt{UDP});
+    \item \textbf{Internet layer:} Gestisce l'instradamento dei pacchetti (es. \texttt{IP});
+    \item \textbf{Network Access Layer:} Gestisce la trasmissione dei dati sul mezzo fisico (es. Ethernet, WLAN).
+\end{itemize}
+
+Dividere la comunicazione in livelli permette di semplificare la progettazione e l'implementazione dei protocolli. Ad esempio, quando faccio browsing su Internet, il mio computer usa \texttt{HTTP} (Application layer) per richiedere una pagina web, \texttt{TCP} (Transport layer) per garantire la consegna dei dati, \texttt{IP} (Internet layer) per instradare i pacchetti e Ethernet (Link layer) per trasmettere i dati sul cavo di rete.
+
+\paragraph{OSI Model}
+Esiste anche una struttura a 7 livelli chiamata \textbf{OSI model} (Open Systems Interconnection), un modello teorico per la comunicazione di rete:
+\begin{itemize}
+    \item Physical layer;
+    \item Data Link layer;
+    \item Network layer;
+    \item Transport layer;
+    \item Session layer;
+    \item Presentation layer;
+    \item Application layer.
+\end{itemize}
+
+\paragraph{Segmenting messages}
+I messaggi di grandi dimensioni vengono suddivisi in segmenti più piccoli per facilitare la trasmissione e la gestione degli errori. I benefici riguardano la velocità di trasmissione, la gestione degli errori e l'efficienza della rete. Ad esempio, se c'è un errore in un segmento, solo quel segmento deve essere ritrasmesso invece dell'intero messaggio. I pacchetti di dati sono numerati per permettere al destinatario di ricostruire il messaggio originale nell'ordine corretto.
+
+\subsection{Canali di trasmissione: livello fisico}
+Il livello fisico si occupa della trasmissione dei bit sul mezzo fisico. L'obiettivo è prendere una sequenza di bit e trasmetterla correttamente dall'altra parte del cavo. Si occupa anche dei componenti hardware necessari per la trasmissione (cavi, connettori, ecc). A livello fisico il segnale può essere elettrico (rame) o ottico (fibra ottica).\\
+
+Il \textit{symbol time} è il tempo necessario per trasmettere un simbolo (es. 0 o 1), il \textit{symbol rate} è il numero di simboli trasmessi al secondo (es. 1 Msymbol/s), e i \textit{symbol levels} sono i livelli di tensione che rappresentano i simboli (es. 2 livelli per 0 e 1). A seconda del numero di livelli di simboli, possiamo trasmettere più bit per simbolo: il bitrate finale è dato da:
+\begin{equation}
+    \text{bitrate} = \text{symbol rate} \times \log_2(\text{symbol levels})
+\end{equation}
+Ad esempio, con 16 livelli di simboli, possiamo trasmettere 4 bit per simbolo (perché $2^4 = 16$).
+Se ad esempio ho un symbol time di 0.1microsecondi, il symbol rate è di 10 Msymbol/s. Se uso 4 livelli di simboli, il bitrate sarà di 40 Mbps:
+
+Throughput è la quantità effettiva di dati trasmessi in un certo intervallo di tempo, mentre bandwidth è la capacità massima del canale di trasmissione. La differenza tra throughput e bandwidth è dovuta a vari fattori come la congestione della rete, gli errori di trasmissione e il protocollo di comunicazione utilizzato.
+Se ho un symbol time di 0.05 microsecondi, 32 possibili symbol levels, facendo l'inverso di 0.05 microsecondi ottengo un symbol rate di 20 Msymbol/s. Il final throughput sarà quindi:
+\begin{equation}
+    \text{bitrate} = 20 \times 10^6 \times \log_2(32) = 20 \times 10^6 \times 5 = 100 \text{ Mbps}
+\end{equation}
+e il final goodput sarà inferiore a 100 Mbps a causa di overhead e errori di trasmissione.
+La signal bandwidth è la gamma di frequenze che un segnale occupa nel dominio delle frequenze. Si misura in Hertz (Hz) e rappresenta la differenza tra la frequenza massima e minima del segnale. Una maggiore signal bandwidth consente di trasmettere più dati in un dato intervallo di tempo, poiché può supportare una maggiore velocità di trasmissione.
+VERIFICA QUESTA PARTE A CASA
+
+\paragraph{Valutazione delle prestazioni in termini di bit error rate (BER)}
+Il Bit Error Rate (BER) è una misura della qualità di un canale di comunicazione.
+Indica la percentuale di bit trasmessi che sono stati ricevuti in modo errato a causa di rumore, interferenze o altri fattori. 
+Per esempio un valore come $10^{-7}$ indica che su 10 milioni di bit trasmessi, solo 1 bit è stato ricevuto in modo errato.
+Un valore come questo caratterizza ad esempio la comunicazione satellitare (?).
+Un BER più basso indica una migliore qualità del canale di comunicazione.\\
+Come posso ridurre il BER?\\
+Supponiamo di trasmettere in banda base senza modulazione.
+Aumentando la potenza del segnale trasmesso, miglioriamo il rapporto segnale/rumore (SNR) e riduciamo il BER.
+Commetto l'errore quando due simboli che sono diversi, ma vicini tra loro, vengono confusi a causa del rumore.
+Posso aumentare la potenza a piacere?
+No, perché ci sono limiti normativi e tecnici. 
+Un problema ad esempio sono i costi, banalmente.
+
+\paragraph{Comunicazioni in banda traslata}
+Traslo in frequenza il segnale informativo su una portante a frequenza più alta.
+La larghezza del segnale, anche in questo caso, è circa l'inverso del symbol time.
+Il canale quindi si deve comportare bene in quella banda di frequenze.
+
+QUI PARLA DI CAVI DI DIVERSI TIPI E DI WIRELESS MEDIA (vedi slides).
+
+\subsection{Local Area Networks (Ethernet)}
+Uno standard IEEE che codifica come si comunica in LAN. 
+Ethernet è una rete di qualche kilometro massimo, collegata da \textbf{switch}.
+Ogni switch ha porte per collegarsi con dispositivi o altri switch.
+Esistono diversi tipi di reti ethernet, in base alla velocità di trasmissione.
+Gli indirizzi assegnati all'interfaccia di rete ethernet si chiamano indirizzi MAC.
+da qui seguo tanto è tutto nozionistico.
+
+\end{document}
