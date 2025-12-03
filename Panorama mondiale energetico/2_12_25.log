@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.26)  2 DEC 2025 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.26)  3 DEC 2025 09:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/xt6894/programmi/Primo corso di telecomunicazioni/1_12_25.tex"
-(c:/Users/xt6894/programmi/Primo corso di telecomunicazioni/1_12_25.tex
+**"c:/Users/xt6894/programmi/Panorama mondiale energetico/2_12_25.tex"
+(c:/Users/xt6894/programmi/Panorama mondiale energetico/2_12_25.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 (C:\Users\xt6894\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -278,8 +278,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
-) (1_12_25.aux)
-\openout1 = `1_12_25.aux'.
+) (2_12_25.aux)
+\openout1 = `2_12_25.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -326,84 +326,75 @@ cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 9.
- (1_12_25.out) (1_12_25.out)
+ (2_12_25.out) (2_12_25.out)
 \@outlinefile=\write3
-\openout3 = `1_12_25.out'.
+\openout3 = `2_12_25.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
 
 (C:\Users\xt6894\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 
 (C:\Users\xt6894\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
 [1
 
-{C:/Users/xt6894/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+{C:/Users/xt6894/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 62.
 
-[3] [4] (1_12_25.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 62.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 62.
+
+[2] [3]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 117.
+
+[4] (2_12_25.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-Package rerunfilecheck Info: File `1_12_25.out' has not changed.
-(rerunfilecheck)             Checksum: 023009C45369A7DB07B6F9E80DA7006A;741.
+Package rerunfilecheck Info: File `2_12_25.out' has not changed.
+(rerunfilecheck)             Checksum: C226A995FC5FA4C088C21E691898F752;2204.
  ) 
 Here is how much of TeX's memory you used:
- 9887 strings out of 467871
- 149588 string characters out of 5417891
- 562299 words of memory out of 5000000
- 38633 multiletter control sequences out of 15000+600000
- 642226 words of font info for 74 fonts, out of 8000000 for 9000
+ 9874 strings out of 467871
+ 149549 string characters out of 5417891
+ 561317 words of memory out of 5000000
+ 38626 multiletter control sequences out of 15000+600000
+ 637378 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,788b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ect
-i1000.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+ 75i,6n,79p,591b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x0700.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecbx1200.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ectt1000.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecti0800.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\xt6894\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\xt6894\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\xt6894\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\xt6
-894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Us
-ers\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk>
-<C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr7.pfb><C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 1_12_25.pdf (4 pages, 137702 bytes).
+/ec/dpi600\tcrm1000.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecti1000.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\xt6894\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\xt6894\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\xt6894\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/xt6894/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/x
+t6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on 2_12_25.pdf (4 pages, 117177 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

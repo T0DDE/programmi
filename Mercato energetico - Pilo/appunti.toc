@@ -1,0 +1,12 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Mercato dell'Energia}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}3/12/25 - Contesto Storico Internazionale}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Monopolio e libero mercato}{4}{subsection.1.1.1}%
+\contentsline {subsubsection}{Trasmissione}{4}{section*.2}%
+\contentsline {subsubsection}{Distribuzione}{5}{section*.3}%
+\contentsline {section}{\numberline {1.2}Situazione odierna}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Come si raggiungono gli obiettivi?}{5}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Economia}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Microeconomia}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Monopolio Naturale}{6}{subsection.1.3.2}%
