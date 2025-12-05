@@ -281,6 +281,99 @@ Guarda le slides, tanto sta solo leggendo.
 
 
 
+\section{5/12/25 - Informazione Asimmetrica: Cost of Service Regulation}
+Abbiamo detto che 
+\begin{equation}
+    AC = \frac{F}{q}+c_v,
+\end{equation}
+e
+\begin{equation}
+    \pi = \left(\frac{F}{q}+c_v\right) q - \left(\frac{F}{q}-c_v\right) q=0
+\end{equation}
+Al first best il profitto era $-F$, al second best è $0$. Se includo in $F$, i costi fissi, la remunerazione del capitale, 
+Ho stabilito che c'è questo prezzo: come faccio ora a equipartire a tutti gli utenti i costi che devo dare a TSO e DSO?
+In una situazione ideale il regolatore ha conoscenza perfetta di tutti i costi di produzione, la tecnologia, il comportamento dell'impresa e della domanda.
+Ovviamente non avviene davvero questo, l'impresa regolata ha generalmente più informazioni su tutto ciò rispetto a quante ne abbiano terze parti e regolatori. 
+Questi sono dati di grandissimo valore, un asset, e sono tenuti segreti, e possono essere usati per aumentare il proprio profitto, o perseguire obiettivi manageriali.
+Il rischio peggiore è quando lìimpresa riesce a catturare il regolatore, sfruttandolo a suo vantaggio.
+Quest'asimmetria di informazione è combattuta dai regolatori per evitare situazioni simili.
+In azienda ovviamente azioni che cerchino di sfruttare e aumentare questa asimmetria spesso sono illeciti.
+Il regolatore deve stimolare l'impresa regolata:
+\begin{itemize}
+    \item \textbf{Efficienza:} minimizzare i costi di produzione
+    \item \textbf{Attribuire i prezzi in modo efficiente}
+    \item Raggiungere \textbf{l'equilibrio di bilancio}
+    \item Limitare la sua capacità di esercitare \textbf{market power}
+\end{itemize}
+I regolatori hanno informazioni imperfette, e \textbf{moral hazard} e/o \textbf{adverse selection} sono condizioni tipiche che si manifestano quando delle parti ha un significato vantaggio informativo.
+Gli approcci regolatori più tipici sono:
+\begin{itemize}
+    \item cost plus: regolatore permette al network di recuparare le spese più un margine autorizzato corrispondente alla remunerazione dell'investimento;
+    \item Price (o revenue) cap: il regolatore stabilisce ex-ante un prezzo fisso di remunerazione del servizio;
+\end{itemize}
+Nel primo caso l'impresa deve dichiarare i suoi costi effettivi, e non ci sono azioni per spingere l'operatore a ottimizzare il processo.
+Nel secondo al contrario, l'impresa guadagna di più se ottimizza.
+Occorre capire i costi dell'impresa, fissi e variabili, e garantirne la compertura (second best).
+Dopodiché va stabilita la struttura della tariffa: il regolatore non può decidere le tasse, ma può lavorare sulle tariffe.
+Questa sarà applicata in base alle diverse quantità di prodotto consumato, o in modi diversi per consumatori o prodotti diversi.
+Il costo totale dipende da costi operativi e a fini regolatori\footnote{Regulatory Asset Based (RAB): Riconosco quanto hai speso, e devo restituire in base a quanto hai speso.}, costi in conto capitale (tiene conto del valore del capitale usato), e altri costi.
+Il guadagno annuale totale ammesso nel \textit{cost-plus} per il concessionario
+\begin{equation}
+    R_t = OC_t, + D_t + r \cdot RAB + TAX - F_t
+\end{equation}
+tiene conto di tutti i costi operativi, di manutenzione\footnote{Nota: qui può intervenire l'assimetria informativa: se ti è riconosciuto tot per la manutenzione, non è detto che tu li debba spendere. Resta però il fatto che quel tot. ti è dovuto. Sta al regolatore capire quanto è giusto riconoscere per la manutenzione.}, deprezzamenti (es. prendo un trasformatore e dopo un po' si svaluta), tasse, RAB, tasso di interesse medio, \dots
+L'entita del cash flow, il denaro che torna indietro a chi ha fatto l'investimento, dev'essere ragionevole per permettere di recuperare gli investimenti a un termine non troppo lungo.
+La remunerazione deve riuscire a coprire l'investimento $K_0$.
+Come distribuire l'ammortamento dei costi? 
+\begin{itemize}
+    \item Metodo della linea retta:\\
+    Investimento dingolo $K_0$, vita utile per il bene pari a $N$ anni, RAB al tempo t $RAB_t = K_0 - \Sigma_0^t D_t$
+    Quindi i prezzi devono essere tali da produrre un cashflow netto ricavabile dalla \textbf{formula di Brandeis}. 
+    Con questo metodo prendo tutto quel che ho speso più la remunerazione.
+    Problema: i prezzi iniziali risultano essere troppo alti, e quelli finali troppo bassi (gli asset non riflettono il loro valore di mercato in un determinato momento).
+    Per un'azienda con un singolo asset, quando questo viene sostituito a un costo originale che riflette i prezzi correnti, la formula di Brandeis può causare un improvviso e significativo aumento dei prezzi (\textbf{rate shock}), creando distorsioni nei consumi, e problemi politici per i regolatori.
+    \item Metodo della rendita: \\
+    Aiuta a spalmare meglio i profili tariffari, in modo più stabile nel tempo, un po' meno vantaggiosi per l'azienda. 
+    La somma dell'ammortamento più il rendimento sul capitale residuo è mantenuta costante dall'importo appositamente scelto dell'ammortamento annuale.
+    L'impresa vorrebbe avere tutto subito, tutto prima, per questo è più svantaggioso per l'impresa spalmarlo nel tempo.
+\end{itemize}
+
+Waighted Average Cost of Capital (WACC): è un indice che determina come il capitale viene remunerato, quanti soldi si fanno sul capitale. 
+Si calcola usando Equity (soldi dell'azienda), o andando a chiedere prestiti (debito).
+Tipicamente il tasso di ritorno sul debito è minore del tasso di ritorno su equity (che comporta più rischio).
+Il rischio cresce con il rapporto debito/investimenti: chi presta i soldi vuole conseguentemente un maggior livello di remunerazione, perché se il tuo livello di indebitamento cresce, diventi un soggetto più rischioso.
+Non conviene quindi indebitarsi troppo per questo motivo.
+Il WACC è calcolato periodicamente dall'autorità di regolazione.
+
+\subsection{Obiettivi}
+\paragraph{Impresa} Vuole dare utili a chi ha quote dell'azienda, quindi coprire costi e remunerare creditori e investitori.
+Non ha neanche una grand voglia di fare innovazione, seguire best practice, ma sono spinti a fare investimenti perché sono remunerati.
+Non è detto però che ci debba essere un senso dietro l'investimento, per l'impresa basta che sia, tanto ci guadagna. 
+\paragraph{Consumatori} Vogliono il minimo prezzo in relazione ai costi sostenuti, e il prezzo si basa su valutazioni economiche dell'impresa: chi me lo garantisce?
+Infine ovviamente gli incentivi alla riduzione dei costi per i consumatori son sempre troppo pochi. 
+
+\subsection{Price / Revenue CAP Regulation}
+QUI CERCO DI SEGUIRE SENZA SCRIVERE PERCHé è SOPORIFERO
+
+\subsection{TOTEX}
+Finora per gli investimenti in conto capitale si è usato il sistema cost plus, mentre per la gestione del sistema si è usato il revenure cap.
+TOTEX è un sistema nato in inghilterra, che tenga conto ti CAPEX e OPEX simultaneamente.
+In Italia nasce un acronimo che si chiama ROSS, che sostanzialmente è un TOTEX.
+Nel mondo della regolazione si hanno input regulation, dove il soggetto regolato ottiene soldi in funzione dei soldi che sostiene, attraverso il cost plus, e il revenue/price cap.
+L'output regolation invece i soldi ricevuti sono indice delle prestazioni raggiunte.
+Il nuovo approccio TOTEX combina costi conto capitale e costo operativi, input e output regulation, con un approccio innovativo.
+Esistono sempre asimmetrie informative: il regolatore o compensa i costi sostenuti dall'impresa così come sono forniti, o ???
+L'idea del TOTEX è quella di fare \textbf{profit sharing}:
+\begin{itemize}
+    \item Incentivi all'efficienza
+    \item Riduzione del rischio 
+    \item Innovazione e miglioramento continuo
+    \item Trasparenza e fiducia
+\end{itemize}
+
+
+
+
 
 
 

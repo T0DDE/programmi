@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.26)  3 DEC 2025 09:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.26)  5 DEC 2025 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/xt6894/programmi/Panorama mondiale energetico/2_12_25.tex"
-(c:/Users/xt6894/programmi/Panorama mondiale energetico/2_12_25.tex
+**"c:/Users/xt6894/programmi/Panorama mondiale energetico/appunti.tex"
+(c:/Users/xt6894/programmi/Panorama mondiale energetico/appunti.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 (C:\Users\xt6894\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -278,8 +278,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
-) (2_12_25.aux)
-\openout1 = `2_12_25.aux'.
+) (appunti.aux)
+\openout1 = `appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -326,9 +326,9 @@ cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 9.
- (2_12_25.out) (2_12_25.out)
+ (appunti.out) (appunti.out)
 \@outlinefile=\write3
-\openout3 = `2_12_25.out'.
+\openout3 = `appunti.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
@@ -362,13 +362,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 117.
 
-[4] (2_12_25.aux)
+[4] (appunti.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-Package rerunfilecheck Info: File `2_12_25.out' has not changed.
-(rerunfilecheck)             Checksum: C226A995FC5FA4C088C21E691898F752;2204.
+
+
+Package rerunfilecheck Warning: File `appunti.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `appunti.out':
+(rerunfilecheck)             Before: E814643A5C14ECD3CFDAD426C5AA3177;2260
+(rerunfilecheck)             After:  C226A995FC5FA4C088C21E691898F752;2204.
  ) 
 Here is how much of TeX's memory you used:
  9874 strings out of 467871
@@ -392,7 +399,7 @@ t6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
 :/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 7.pfb><C:/Users/xt6894/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on 2_12_25.pdf (4 pages, 117177 bytes).
+Output written on appunti.pdf (4 pages, 117233 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  22 named destinations out of 1000 (max. 500000)
