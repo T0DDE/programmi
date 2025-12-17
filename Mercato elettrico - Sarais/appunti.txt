@@ -1,0 +1,52 @@
+12/12/2025
+
+Tra zone di mercato diverse c'è una limitata capacità di trasporto di energia. Ci sono delle interconnnessioni fittizie tra zone di mercato diverse che hanno appunto una capacità limitata.
+
+CROSS BORDER CAPACITY
+
+NTC:
+Massimo programma di scambio tra due aree di mercato compatibile con gli standard di sicurezza con margine di sicurezza ( trasmission reliability margin) che tenga conto delle inaccuratezze che abbiamo nel sistema.
+
+I valori di NTC vengono definiti a livello annuale  dalla Technical Task Force (TTF).
+
+Un altro vincolo è l'Allocation Constraint, che riguarda tutti i confini dell'Italia nord con il resto dei paesi, generalizzato (NTC è specifico per ogni confine e direzione), che limita la somma dell'import totale che arriva.
+L'allocation Constraint avviene solo nel Nord Italia, in quanto ci sono diverse frontiere. 
+Se ho un fabbisogno superiore alla produzione di rinnovabile, uso impianti regolabili per coprirmi. Nel momento in cui ho invece basso fabbisogno e tanta rinnovabile, ho pochissimi impianti accesi tradizionali in grado di fare regolazione, e mi trovo quindi con poco margine. Cosa faccio in quei casi? 
+Blocco l'import, e faccio in modo che il fabbisogno Italiano sia soddisfatto dai rinnovabili ma anche dai trqafizionali, e lo faccio agendo sull'Allocation Constraint.
+
+CALCOLO DELLA CAPACITÀ
+
+Regioni di calcolo:
+Quelle interconnessioni in cui è stata divisa l'intera Europa. Noi stiamo nella Italy North, la regione di calcolo GRIT (Grecia e Italia) e tutte le interconnessioni interne italiane.
+Per ogni CCR c'è un ENTE, il Regional Coordination Center (RCC) che fa il calcolo da fornire ai vari gestori ogni giorno.
+
+Come viene fatto il calcolo? 
+Principalmente ci sono due cluster:
+    - Statistico, usato nel long term, usa un algoritmo che costruisce una curva di durata frequenza vs NTC, e si prende il valore di NTC in cui per il 97% dei cari l'RCC aveva calcolato un valore più alto e più basso, in modo da avere un rischio del 3% da usare per fare il conto.
+    Questo valore in realtà poi è specifico per il periodo dell'anno, va spalmato su tutte le ore dell'annom e costruisci una curva oraria dove sovrapporre 
+        1. Il piano di manutenzione annuale delle varie linee;
+        2. Gli Allocation Constraint;
+        3. Eventuali nuove linee pianificate, per le quali l'NTC aumenterebbe da una certa data in poi;
+    - Fisico, che si basa sempre sull'NTC, ma tiene in considerazione un modello di rete semplificato (solo linee di AT) con le linee da monitorare, e poiché è un calcolo iterativo si monitorano solo specifiche linee (sennò calcoli troppo lunghi), vengono date le contingenze critiche (Critical Network Elements and Contingencies) - SU QUESTO MI SON DISTRATTO - A livello annuale, o su lungo termine in generale, è meno robusto rispetto al modello statistico. Risulta però essere più preciso rispetto a quello statistico.
+
+MODALITÀ DI ALLOCAZIONE DELLA CAPACITÀ - Mercato Long Term
+
+Serve a permettere agli operatori di mercato di coprirsi dal rischio che il prezzo dell'energia nel momento di consegna si amolto diverso da quello che ti aspetti nel momento del tuo investimento (es. Ucraina, cose non prevedibili).
+Questo può avvenire in due modi, a seconda del tipo di prodotto:
+    - Physical Trasmission Rights (PTR);
+    - Financial Trasmission Rights (FRT);
+
+NTC: capacità totale
+prodotto: pezzo dell'NTC che andrò a mettere all'asta Long Term.
+
+Non posso calcolare un prodotto se non conosco l'NTC. 
+
+
+
+
+
+    
+
+
+
+

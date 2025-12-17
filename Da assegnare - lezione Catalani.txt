@@ -1,0 +1,125 @@
+16/12/25
+
+MERCATO ELETTRICO - PARTE I
+
+Si definisce il valore di un bene a partire dall'utilità di questo. A seconda dell'utilità, si può determinare il valore, quanto si è disposti a spendere per quel bene. 
+Determinato il valore, si può trovare l'utilità marginale, la derivata.
+
+L'utliità marginale che associo al 10mo kilo di mele, non al primo kilo, va decrescendo. L'utilità totale e quella marginale non sono la stessa cosa. Da un punto di vista concreto ed economico, ma anche matematico.
+
+Un costo evitato in economia è esattamente uguale a un costo marginale, un guadagno.
+
+Utilità Totale: UT 
+
+UT - p*q = costo evitato 
+
+Se voglio massimizzare il costo evitato, faccio la derivata rispetto a q:
+
+-p (dq/dq + q dp/dq) = 0
+
+p: prezzo unitario
+q: quantità acquistata
+
+p dipende da q? Se oggi compro una Panda, domani il prezzo della Panda non sarà cambiato: per quantità piccole, la variazione del prezzo per variazione di q è molto piccola: si può approssimare quindi che la derivata si annulli. Questo è vero sempre nei mercati liquidi, e non nei mercati di lunghissimo termine (vedi slide).
+Mercato liquido: liquidità del mercato se ne ha quando c'è molta offerta. Vedi i Rolex: pochissima offferta, crea mancanza di liquidità del mercato. La scarsa quantità causa prezzi che dipendono molto dalla quantità, e la derivata non è più infinitesima.
+Durante la crisi i beni di lusso diventano un bene rifugio, e la domanda aumenta.
+
+Quindi:
+dq/dq = 1
+dp/dq = 0
+
+per cui l'utilità marginale è uguale al prezzo che devo offrire:
+
+p = q
+
+Per massimizzare il guadagno, devo vendere le mele al prezzo del decimo kilo delle mele, non il primo. 
+
+I costi in geerrale si ripartiscono in fissi e varibaili, ma non sono sempre facilmente distinguibili. 
+Anche per i costi si fa la derivata dei costi totali rispetto alla quantità, e anche in quel caso si trova che il costo marginale è fondamentalmente il costo variabile.
+
+CM (costo marginale) = ... = CV (costo variabile)
+
+Se vendo mele, come prima, 
+
+pq - CT = guadagno --> derivata = 0 per massimizzare:
+
+p = CM 
+
+Il prezzo per massimizzare il quadagno è proprio ul costo marginale. 
+
+
+L'area sotto la curva di domanda, euro/MWh * MWh = euro, sono soldi.
+L'area sotto la curva di offerta stessa cosa, e in particolare sono i costi.
+
+Le varie sezioni delle aree hanno un significato specifico (vedi slide).
+
+Un mercato che funziona è un mercato che massimizza la somma dei surplus dei proiduttori e dei consumatiri, in breve il "benessere sociale".
+Questo avviene (si dimostra) non quando si fa il bene del conumatore, ma quando il mercato è libero.
+In un mercato ideale, bisogna offrire al mercato variabile, e se ci pensi non è normale.
+
+
+
+Qui una aprte in cui ho solo seguito
+
+
+MALEDIZIONE DEL VINCITORE
+Il mercato si basa sulla teoria dei giochi di Nesh: il mercato si basa su un equilibrio che, nel momento in cui uno cambia la sua strategia, andrà a spostarsi verso un nuovo equilibrio.
+Nel mercato si tende a minimizzare il rischio, al costo di rinunciare a un guadagno maggiore giocando di strategia.
+Questa cosa è facile quando si conosce il VALORE Del bene a cui si sta vendendo, o quando il gioco è ripetuto (tante aste).
+Esiste il rischio che il valore sia ignoto (esempio albergo sulla luna), e chi vince lo faccia per aver sbagliato la sua stima dei costi. Non rientrerà mai nei costi, e vincere la gara è stata per lui una maledizione in questo senso.
+Quando valore e prezzo non sono deviniti, e possono divergere, c'è un rischio maggiore di mercato.
+
+
+
+Nei mercati c'è il potere di mercato: non è illegale il potere di mercato, è illegale l'abuso. In quel caso interviene l'anti-trust.
+La conoscenza poi è limitata, si va su proiezioni, elucubrazioni, c'è un grado di errore e c'è un rischio. Il rischio di solito si tampona aumentando il prezzo, buttando il rischio sul consumatore.
+
+Il costo variabile per le rinnovabili, per via degli incentivi per cui mi pagano per ogni MWh che immetto nella rete, è negativo! non zero! perché mi pagano per produrre. Ciononostante non vendono a prezzi negativi (pagare per produrre), cioé al prezzo marginale, perché il mercato non è ideale.
+
+Gli incentivi sono pagati dalle bollette di tutti, e dal costo della CO2 dei produttivi, introducendo una esternalità che spinge a una transizione ecologica. Questa esternalità rended il mercato NON LIBERO. Viene introdotta ovviamente per motivi politici, non di mercato. Il mercato funziona se è libero, scevro da qualunque vincolo.
+
+DIFFERENZA MERCATO ENERGIA E MERCATO DISPACCIAMENTO
+
+Il primo è un mercato finanziario, nel secondo è la sala mercato di Terna a fare la domanda. Funziona pay as bid, acquisto al prezzo della tua offerta, e sta a me minimizzare il mio costo totale.
+
+XBID: UN MERCATO CON TEORIA DIVERSA DALL'ENERGY ONLY
+
+merfcato XBID, a trattazione continua.
+Un meccanismo in cui le offerte sono matchate automaticamente dalla richiesta.
+Se io ho acquistato una produzione a un certo prezzo, ho un diritto ha produrre domani. Sono disposto a non produrre (vendere la mia produzione) a un prezzo che stabilisco io.
+Mentre nel mercato finanziario produzione e domanda sono concetti separati, nel XBID posso avere produttori che non vgliono produrre più e vendono produzione, o che vogliono produrre di più e quindi viceversa, etc.
+Funziona a contrattazione continua, cioè si accoppiano offerte e domande simili, e il prezzo è il primo dei due a esserer stato offerto (uno propone a quanto vendere la sua produzione, l'altro propone a quanto la compra), e si sceglie la più conveniente, poi escono dal mercato. Una volta fatta la contrattazione, fine.
+Se l'offerta non viene accoppiata, anche se magari più competitiva di altre venute prima, perchè arrivo troppo tardi, e io per esempio voelvo comprare un titolo di produzione di energia da vendere, resto tagliato fuori. 
+In questo caso il mercato non massimizza il social welfare, perché può venir accettata una offerta meno competitiva della mia arrivata prima. Massimizza il tasso di CHURN, calcolato in funzione di quante volte uno stesso identico bene viene contrattato più volte.
+
+Man mano che un bene viene passato, contrattato, tanto più prezzo e valore del bene vanno a coincidere, e il bene verrà quindi deprezzato o il prezzo aumenterà.
+
+nota: prezzo e valore possono divergere sia in positivo che in negativo. Se il valore di qualcosa è ignoto i nfunzione del tempo, più il bene acquisterà il vero valore lontano nel tempo, più possibliità c'è che valore e prezzo divergano.
+
+Questo mercato è per le rinnovabili, che possono proporre un valore più vicino al valore vero solo stando molto vicino a quando dovranno produrre.
+
+
+
+
+17/12/25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
